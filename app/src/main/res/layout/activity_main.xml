@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_hdpi"
+    tools:context="com.luchianenco.happybirthday.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/happybirthday"
+        android:id="@+id/splash"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:onClick="onImageClick" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+
+        <TextView
+            android:text="Happy Birthday, my Brother!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#F3E5F5"
+            android:id="@+id/wishTitle"
+            android:alpha="0"
+            android:textSize="28sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Let your dreams come true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/wishText"
+            android:textSize="24sp"
+            android:textColor="#CE93D8"
+            android:layout_below="@+id/wishTitle"
+            android:layout_centerHorizontal="true"
+            android:alpha="0" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:id="@+id/icons"
+            android:alpha="0"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/wishText"
+            android:layout_alignEnd="@+id/wishText"
+            android:layout_marginRight="37dp"
+            android:layout_marginEnd="37dp">
+
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/xmas_05"
+                android:id="@+id/icons_giftbox"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/xmas_09"
+                android:id="@+id/icons_snowman"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/xmas_06"
+                android:id="@+id/icons_tree"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
