@@ -25,7 +25,7 @@
 
 
         <TextView
-            android:text="Happy Birthday, my Brother!"
+            android:text="@string/wish_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -37,7 +37,7 @@
             android:layout_centerHorizontal="true" />
 
         <TextView
-            android:text="Let your dreams come true"
+            android:text="@string/wish_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
