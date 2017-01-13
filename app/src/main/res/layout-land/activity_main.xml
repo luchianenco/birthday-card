@@ -47,6 +47,29 @@
             android:layout_below="@+id/wishTitle"
             android:layout_centerHorizontal="true"
             android:alpha="0" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:srcCompat="@drawable/xmas_05"
+            android:id="@+id/icons_giftbox"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/wishTitle"
+            android:layout_toStartOf="@+id/wishTitle"
+            android:layout_marginRight="64dp"
+            android:layout_marginEnd="64dp" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:srcCompat="@drawable/xmas_09"
+            android:id="@+id/icons_snowman"
+            android:layout_alignTop="@+id/icons_giftbox"
+            android:layout_toRightOf="@+id/wishTitle"
+            android:layout_toEndOf="@+id/wishTitle"
+            android:layout_marginLeft="64dp"
+            android:layout_marginStart="64dp" />
+
     </RelativeLayout>
 
 </LinearLayout>
